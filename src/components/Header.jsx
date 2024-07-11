@@ -7,8 +7,8 @@ const Header = () => {
         setOpen(!Open);
     }
   return (
-    <div className=''>
-        <div style={{backgroundImage:"linear-gradient(to top, rgba(0,0,0,0.5) 50%,  rgba(0,0,0,0.5)50%), url(https://img.freepik.com/free-photo/man-wearing-virtual-reality-gadget-close-up_23-2148864950.jpg?t=st=1717936779~exp=1717940379~hmac=ce67d2c2ed413e35becbbb83f26342f8a5fbc3ec850a909f27c488c6112f002f&w=826)", backgroundPosition:"center"}} className='bg-no-repeat bg-cover  h-[100vh]'>
+    <div className='overflow-x-hidden'>
+        <div style={{backgroundImage:"linear-gradient(to top, rgba(0,0,0,0.5) 50%,  rgba(0,0,0,0.5)50%), url(https://img.freepik.com/free-photo/man-wearing-virtual-reality-gadget-close-up_23-2148864950.jpg?t=st=1717936779~exp=1717940379~hmac=ce67d2c2ed413e35becbbb83f26342f8a5fbc3ec850a909f27c488c6112f002f&w=826)", backgroundPosition:"center"}} className='bg-no-repeat bg-cover pb-[8%]'>
             <div className="px-[20px] lg:px-[40px] pt-4">
                 <div className="flex justify-between lg:hidden">
                 <i className="bi bi-symmetry-vertical text-3xl text-white"></i>
@@ -16,9 +16,9 @@ const Header = () => {
                 <i className='bi bi-list text-3xl text-white' onClick={toggleNav}></i>
                 </div>
                 <div className={`${Open ? 'block' : 'hidden'} lg:block`}>
-                    <div className="flex lg:flex-row flex-col lg:justify-between navbar absolute bg-slate-800 lg:bg-transparent lg:relative p-6 top-0 right-0 z-10 h-full w-[230px] lg:w-full">
+                    <div className="flex lg:flex-row flex-col lg:justify-between navbar absolute bg-slate-800 lg:bg-transparent lg:relative p-6 lg:p-0 lg:py-4 top-0 right-0 z-10 h-full w-[230px] lg:w-full">
                         <i class="bi bi-x-square text-2xl text-white ml-auto lg:hidden" onClick={toggleNav}></i>
-                        <ul className='flex gap-12 text-white lg:flex-row flex-col'>
+                        <ul className='flex gap-12  text-white lg:flex-row flex-col'>
                             <li className='uppercase font-medium text-sm'><a href="">Home</a></li>
                             <li className='uppercase font-medium text-sm'><a href="">About</a></li>
                             <li className='uppercase font-medium text-sm'><a href="">Services</a></li>
@@ -189,7 +189,7 @@ const Header = () => {
                     <img src="https://img.freepik.com/free-photo/high-tech-futuristic-gaming-virtual-reality-headset_23-2151133211.jpg?t=st=1718089526~exp=1718093126~hmac=a25decbffd7a6adacaa7608e561cbffc5d23ed502eeedde097df4760cdf69b51&w=826" alt="" className='lg:w-full w-[400px] lg:h-[300px] h-[300px] object-cover object-top rounded-md' />
                 </div>
                 <div className='basis-[100%] lg:mt-10 md:hidden lg:block'>
-                    <img src="https://img.freepik.com/premium-photo/stylish-black-background-original-design-multicooker-3d-illustration-3d-rendering_158469-200.jpg?w=826" alt="" className='lg:w-full w-[400px] lg:h-[400px] h-[300px] object-cover object-top rounded-md' />
+                    <img src="https://img.freepik.com/premium-photo/stylish-black-background-original-design-multicooker-3d-illustration-3d-rendering_158469-200.jpg?w=826" alt="" className='lg:w-full w-full lg:h-[400px] h-[300px] object-cover object-top rounded-md' />
                 </div>
             </div>
 
@@ -280,7 +280,7 @@ const Header = () => {
                     <input type="text" className='bg-[#f1f1f1] rounded-md px-3 py-2 mt-4 w-[80%]' placeholder='Enter your email' />
                 </form>
                 <div className="basis-[15%]">
-                    <h5 className='font-semibold text-lg'>Landings</h5>
+                    <h5 className='font-semibold text-lg pt-4'>Landings</h5>
                     <ul className='pt-4'>
                         <li>Landing one</li>
                         <li>Landing one</li>
