@@ -280,7 +280,7 @@ const Header = () => {
                     <input type="text" className='bg-[#f1f1f1] rounded-md px-3 py-2 mt-4 w-[80%]' placeholder='Enter your email' />
                 </form>
                 <div className="basis-[15%]">
-                    <h5 className='font-semibold text-lg pt-4'>Landings</h5>
+                    <h5 className='font-semibold text-lg pt-4 lg:pt-0'>Landings</h5>
                     <ul className='pt-4'>
                         <li>Landing one</li>
                         <li>Landing one</li>
